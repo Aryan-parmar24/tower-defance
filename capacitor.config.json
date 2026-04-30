@@ -1,7 +1,11 @@
 {
   "appId": "com.yourname.towerdefense",
   "appName": "Tower Defense",
+<<<<<<< HEAD
   "webDir": ".",
+=======
+  "webDir": "www",
+>>>>>>> 5a84eb0e9eed80cbd41f48cd7e42607d3ae7f204
   "server": {
     "url": "https://dapper-ganache-e02618.netlify.app/",
     "cleartext": true,
@@ -20,4 +24,8 @@
       "showSpinner": false
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5a84eb0e9eed80cbd41f48cd7e42607d3ae7f204
