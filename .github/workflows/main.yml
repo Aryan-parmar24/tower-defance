@@ -30,6 +30,17 @@ jobs:
     - name: 📦 Install Dependencies
       run: npm install
     
+    - name: 📁 Create www folder
+      run: |
+        mkdir -p www
+        cp index.html www/index.html 2>/dev/null || true
+        cp manifest.json www/manifest.json 2>/dev/null || true
+        cp sw.js www/sw.js 2>/dev/null || true
+        cp icon-192.png www/icon-192.png 2>/dev/null || true
+        cp icon-512.png www/icon-512.png 2>/dev/null || true
+        echo "✅ www folder contents:"
+        ls -la www/
+    
     - name: ➕ Add Android Platform
       run: npx cap add android
     
@@ -45,7 +56,7 @@ jobs:
         chmod +x gradlew
         ./gradlew assembleDebug --no-daemon
     
-    - name: 📤 Upload APK Artifact
+    - name: 📤 Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: TowerDefense-APK
@@ -58,10 +69,10 @@ jobs:
         tag_name: v${{ github.run_number }}
         name: "🏰 Tower Defense v${{ github.run_number }}"
         body: |
-          ## 📱 Install Instructions:
-          1. Download APK file below
-          2. On Android: Settings → Allow unknown sources
-          3. Install and enjoy!
+          ## 📱 Install:
+          1. Download APK below
+          2. Allow unknown sources on Android
+          3. Install and play!
         files: android/app/build/outputs/apk/debug/app-debug.apk
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
