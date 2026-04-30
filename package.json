@@ -1,15 +1,15 @@
 {
   "name": "tower-defense",
   "version": "1.0.0",
-  "description": "Hardcore Tower Defense Game",
-  "main": "index.html",
+  "description": "Tower Defense Game",
+  "main": "www/index.html",
   "scripts": {
     "build": "npx cap sync android",
-    "start": "npx cap run android"
+    "copy": "cp index.html www/"
   },
   "dependencies": {
-    "@capacitor/android": "^5.0.0",
-    "@capacitor/core": "^5.0.0",
-    "@capacitor/cli": "^5.0.0"
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/core": "^5.7.0",
+    "@capacitor/cli": "^5.7.0"
   }
 }
