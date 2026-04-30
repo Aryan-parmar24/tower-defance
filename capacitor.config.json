@@ -1,0 +1,23 @@
+{
+  "appId": "com.yourname.towerdefense",
+  "appName": "Tower Defense",
+  "webDir": ".",
+  "server": {
+    "url": "https://dapper-ganache-e02618.netlify.app/",
+    "cleartext": true,
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#0a0a1a"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#0a0a1a",
+      "showSpinner": false
+    }
+  }
+}
