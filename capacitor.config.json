@@ -5,10 +5,12 @@
   "server": {
     "url": "https://dapper-ganache-e02618.netlify.app/",
     "cleartext": true,
-    "androidScheme": "https"
+    "androidScheme": "https",
+    "hostname": "app"
   },
   "android": {
     "allowMixedContent": true,
-    "backgroundColor": "#0a0a1a"
+    "backgroundColor": "#0a0a1a",
+    "webContentsDebuggingEnabled": false
   }
 }
