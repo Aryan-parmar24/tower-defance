@@ -1,6 +1,6 @@
 {
-  "appId": "com.aryan.td.game.v2",
-  "appName": "TD Hardcore",
+  "appId": "com.aryan.td.final.v3",
+  "appName": "Tower Defense Pro",
   "webDir": "www",
   "server": {
     "url": "https://dapper-ganache-e02618.netlify.app/",
@@ -9,15 +9,6 @@
   },
   "android": {
     "allowMixedContent": true,
-    "captureInput": true,
-    "webContentsDebuggingEnabled": false,
     "backgroundColor": "#0a0a1a"
-  },
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 2000,
-      "backgroundColor": "#0a0a1a",
-      "showSpinner": false
-    }
   }
 }
