@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="c192" width="192" height="192"></canvas>
+<canvas id="c512" width="512" height="512"></canvas>
+<button onclick="download()">Download Icons</button>
+<script>
+function drawIcon(canvas){
+    let ctx = canvas.getContext('2d');
+    let s = canvas.width;
+    
+    // Background
+    let g = ctx.createLinearGradient(0,0,s,s);
+    g.addColorStop(0,'#050510');
+    g.addColorStop(1,'#1a1a3a');
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,s,s);
+    
+    // Tower emoji
+    ctx.font = (s*0.5)+'px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText('🏰', s/2, s*0.65);
+    
+    // Border
+    ctx.strokeStyle = '#f1c40f';
+    ctx.lineWidth = s*0.04;
+    ctx.strokeRect(s*0.05,s*0.05,s*0.9,s*0.9);
+}
+
+drawIcon(document.getElementById('c192'));
+drawIcon(document.getElementById('c512'));
+
+function download(){
+    let a = document.createElement('a');
+    a.download = 'icon-192.png';
+    a.href = document.getElementById('c192').toDataURL();
+    a.click();
+    
+    setTimeout(()=>{
+        a.download = 'icon-512.png';
+        a.href = document.getElementById('c512').toDataURL();
+        a.click();
+    }, 500);
+}
+</script>
+</body>
+</html>
