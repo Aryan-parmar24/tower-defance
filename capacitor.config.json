@@ -1,6 +1,6 @@
 {
-  "appId": "com.yourname.towerdefense",
-  "appName": "Tower Defense",
+  "appId": "com.aryan.td.game.v2",
+  "appName": "TD Hardcore",
   "webDir": "www",
   "server": {
     "url": "https://dapper-ganache-e02618.netlify.app/",
