@@ -3,7 +3,7 @@
   "appName": "Tower Defense Pro",
   "webDir": "www",
   "server": {
-    "url": "https://dapper-ganache-e02618.netlify.app/",
+    "url": "https://gleeful-monstera-6becc2.netlify.app/",
     "cleartext": true,
     "androidScheme": "https",
     "hostname": "app"
