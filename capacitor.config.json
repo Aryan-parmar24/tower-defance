@@ -1,16 +1,14 @@
 {
-  "appId": "com.aryan.towerdefense.pro",
-  "appName": "Tower Defense Pro",
+  "appId": "com.aryan.towerdefense.v4",
+  "appName": "TD Hardcore",
   "webDir": "www",
   "server": {
     "url": "https://gleeful-monstera-6becc2.netlify.app/",
     "cleartext": true,
-    "androidScheme": "https",
-    "hostname": "app"
+    "androidScheme": "https"
   },
   "android": {
     "allowMixedContent": true,
-    "backgroundColor": "#0a0a1a",
-    "webContentsDebuggingEnabled": false
+    "backgroundColor": "#0a0a1a"
   }
 }
